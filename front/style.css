@@ -1,0 +1,636 @@
+/* ===================================
+            Default Values
+        Font Family    : Roboto
+        Greenish Blue  : #34c6d3 (buttons,icons,links,bg)
+        Steel Gray     : #41464b (Headings)
+        white          : #fff    (texts with black bg)
+        Blue Bayoux    : #64707b  (Paragraps)
+
+====================================== */
+*{
+	padding: 0px;
+	margin: 0px;
+	border: border-box;
+}
+html, body{
+	height: 100%;
+}
+
+body{
+    font-family: "Roboto Condensed", "sans-serif";
+}
+
+p{
+	color: #64707b;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+h1{
+	color: black;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/* ===================================
+		Home CSS Part
+====================================== */
+/* panel part*/
+#pan-nav{
+	height: 140px;
+}
+.panel{
+	height: 50px;
+	background-color: #16325B;
+	color: beige;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.panel-register:hover{
+	color: red;
+}
+.panel a{
+	margin-right: 30px;
+	color: beige;
+	text-decoration: none;
+}
+.panel a:hover{
+	color: red;
+}
+.panel i{
+	font-size: 0.95rem;
+}
+.A-registration{
+	height: 140px;
+	background-color: #624E88;
+	text-align: start;
+	font-weight: 800;
+	
+}
+.A-registration h2{
+    color: #CB80AB;
+	padding: 50px 0px 0px 15px;
+	text-transform: uppercase;
+	font-size: 30px;
+
+}
+.placeholders{
+	display: flex;
+	flex-direction: column;
+	padding: 5% 25% 0% 25%;
+}
+.placeholders textarea{
+	background-color: #CDC1FF;
+	margin-bottom: 5%;
+	align-content: center;
+	/* border: none;  */
+	padding: 10px 0px 0px 5px;
+}
+.text-area-holder{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid black;
+	align-items: center;
+}
+.panel-login:hover{
+	color: red;
+}
+.form button{
+	background-color: #CDC1FF;
+	margin-left: 47%;
+	height: 40px;
+	width: 100px;
+	font-weight: 400;
+	font-size: 0.95rem;
+	border: 2px solid #E4B1F0;
+}
+#register-btn{
+	width: 200px;
+	margin-left: 40%;
+}
+.form p{
+	color: #CB80AB;
+	text-align: center;
+	margin-top: 20px;
+	
+}
+#t-c b{
+	padding-bottom: 50px;
+	color: #ED3EF7;
+}
+.form p:hover{
+	color: #D91656;
+}
+
+.navbar{
+	height: 90px;
+	background-color: rgb(25, 25, 58);
+	align-items: center;
+	display: flex;
+}
+.logo{
+	background-image: url("../img/logoa.jpg");
+	background-size: cover;
+	height: 70px;
+	width: 100px;
+}
+.nav{
+	margin-left: 700px;
+	justify-content: space-evenly;
+}
+.nav select{
+	background-color: rgb(25, 25, 58);
+	color: white;
+	border: none;
+	text-transform: capitalize;
+	font-weight: 600;
+	font-size: 0.85;
+	margin: 0px 5px 0px 5px;
+	cursor: pointer;
+}
+.nav select:hover{
+	color: red;
+}
+.nav-cart{
+	color: white;
+	margin-left: 20px;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+ .nav-cart:hover{
+	color: red;
+}
+.para{
+	height: 25px;
+	background-color: #54E346;
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+	text-align: center;
+	color: #3B44F6;
+ }
+#firstp{
+	color: #3B44F6;
+	font-weight: 500;
+ }
+ .msg i{
+	margin-top: 3px;
+ }
+#home{
+	height: 100%;
+}
+#home-cover{
+	height: 100%;
+	background-image: url("../img/backimg.jog.jpg");
+}		
+
+#home-content-box{
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+#home-content-box-inner{
+	display: table-cell;
+	vertical-align: middle; /*it vertically alligns the whole text in middle*/
+	text-align: center;  /*align the texts in the center, vertically middle. Horizontal */
+}
+#home-heading h3{
+	color: #fff;
+	font-size: 55px;
+	font-weight: 700;
+	margin: 20px 0 20px 0;
+	text-transform: uppercase;
+}
+
+/* ===================================
+		Parallax (Generic)
+====================================== */
+.bg-parallax{
+	background-repeat: no-repeat;
+	background-size: cover; /*it will cover the whole section with the picture*/
+	background-position: center;
+	background-attachment: fixed; /*parallax effect, image moves while scrolling */
+} 
+
+/* ===================================
+		Button (generic)
+====================================== */
+.btn-general{
+	border-radius: 0;
+	border-width: 2px;
+	padding: 12px 26px 12px 26px;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.btn-white{
+	border-color: #fff;
+	color: #fff;
+}
+.btn-white:hover,
+.btn-white:focus{
+	background-color: #fff;
+	color: #41464b;
+}
+
+/*For About "our work" button */
+.btn-blue{
+	border-color: #34c6d3;
+	color: #34c6d3;
+}
+.btn-blue:hover,
+.btn-blue:focus{
+	background-color: #34c6d3;
+	color: #fff;
+}
+
+/* ===================================
+		Animate CSS
+====================================== */
+#home-cover{
+	animation-delay: .2s;
+	animation-duration: .5s;
+}
+#home-heading{
+	animation-delay: .5s;
+	animation-duration: .5s;
+}
+#home-btn{
+	animation-delay: 1s;
+	animation-duration: .5s;
+}
+
+/* ===================================
+		Content Box (Generic)
+====================================== */
+.content-box{
+	padding: 60px 0px 60px 0;
+}
+.content-title h3{
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+.content-title-white h3, h5{
+	color: #259F6C;
+}
+.content-title-underline{
+	width: 30px;
+	height: 3px;
+	background-color: #34c6d3;
+	margin: 0 auto 30px auto;  /*it will center the line under service*/
+}
+
+
+/* ===================================
+		Services section (Generic)
+====================================== */
+.service-item{
+	padding: 20px 0 20px 0;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.content-box{
+	text-align: center;
+}
+.service-item-icon i{
+	/* color: #34c6d3; */
+	color: #30475E;
+	float: left;
+	padding: 15px; /*means top,right,bottom,left all 15px*/
+	margin-right: 25px;
+	width: 165px;
+	height: 165px;
+	text-align: center;
+	font-size: 120px;
+	border-style: dotted;
+	border-radius: 10px;
+}
+.service-item:hover .service-item-icon i {
+	color: #fff;
+	/* background-color: #34c6d3; */
+	background-color: #30475E;
+}
+.service-item-title h3{
+	font-size: 30px;
+	margin: 0 0 0px 0;
+	padding-top: 40px;
+}
+.service-item-desc p{
+	margin: 0;
+	padding-left: 85px;
+}
+
+/* ---------------------------------
+        Search Box
+----------------------------------*/
+.search-about{
+	background-color: #6A9AB0;
+	padding: 2% 10% 2% 10%;
+	
+}
+.content-search{
+	background-color: #DBD3D3;
+	padding: 20px 0px 120px 0px;
+	text-align: center;
+	height: 180px;
+
+	
+}
+.search{
+	border: 1px solid #FEF9F2;
+	/* padding-top:10px; */
+	height: 40px;
+}
+.btn-search{
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+	gap: 20px;
+}
+/* .btn-option text{
+	width: 90%;
+	height: 30px;
+	padding-left: 9px;
+	border-radius: 5px;
+}	 */
+.search-in input{
+	width: 90%;
+	height: 30px;
+	padding-left: 9px;
+	border-radius: 5px;
+	border: none;
+}
+.search-para p{
+	font-size: 15px;
+	font-weight: 300;
+	color: black;
+	padding-top: 10px;
+}
+
+/* ===================================
+		About Section (diagonal)
+====================================== */
+#about-bg-diagonal{
+	width: 60%;
+	height: 700px;
+	float: right;
+	background-image: url(../img/ai.jpg);
+	background-size: cover;
+	border-left: 200px solid #fff;
+	border-top: 700px solid transparent;
+}
+
+#about-content-box{
+	float: left;
+	height: 700px;
+	
+}
+#about-content-box-outer {
+	width: 100%;  /*same as the "about-content-box" */
+	height: 100%;
+	display: table; 
+}
+#about-content-box-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+#about .content-title h3{
+	text-align: left;
+}
+
+#about .content-title-underline{
+	margin: 0 0 30px 0;
+}
+#about-desc p{
+	margin-bottom: 30px;
+	font-weight: 400;
+}
+#about-btn a:hover{
+	background-color: #30475E;
+}
+
+
+/* ===================================
+		Work
+====================================== */
+.row.no-gutters [class*=col-] {  /*selects all class with 'col' name */
+	padding-left: 0;
+	padding-right: 0;
+}
+.img-wrapper img:hover{
+	transform: scale(1.5);  /*scale increases or decreases image size, ZOOM IN EFFECT */
+	/* cursor: zoom-in; */
+}
+.img-wrapper{
+	overflow: hidden;
+}
+.img-wrapper img{
+	transition: transform .6s ease;  /*smooths the ZOOM IN EFFECT */
+}
+
+#work .content-box{
+	margin-bottom: -15px;
+}
+
+
+/* ===================================
+		TEAM CSS Part
+====================================== */
+#team-mamber{
+	width: 30%;
+}
+.team-member{
+	margin: 0 15px;
+}
+.team-member-info{
+	padding: 10px 0 30px 0px;
+}
+h4.team-member-name{
+	font-size: 22px;
+	font-weight: 699;
+	letter-spacing: 1px;
+	padding-top: 2px;
+}
+h4.team-member-designation{
+	color: #34c6d3;
+	font-size: 18px;
+	font-weight: 699;
+	font-style: italic;
+	letter-spacing: 1px;
+	margin-top: 5px;
+}
+h4.team-member-DIN{
+	font-size: 18px;
+	font-weight: 699;
+}
+
+/* ===================================
+		Social  Generic
+====================================== */
+.social-list{
+	padding-left: 0;
+}
+.social-list li{
+	list-style: none;
+	display: inline-block;
+	height: 32px; /* Creates space around the icon */
+	width: 32px;	/* Creates space around the icon */
+	margin-top: 10px;
+	margin-right: 6px;
+}
+.social-icon i{
+	font-size: 17px;
+}
+.icon-gray i{
+	color: #64707b;
+}
+.icon-white i{
+	color: #fff;
+}
+.social-icon i:hover{
+	color: #34c6d3;
+}
+
+
+/* ===================================
+		Testmonial
+====================================== */
+/* #testimonials{
+	height: 350px;
+} */
+#customers-testimonials{
+	margin-top: -15px;
+}
+#testimonial-cover{
+	background-image: url("../img/bg-testimonials.jpg");
+}
+#testimonial .content-box{
+	background-color: rgba(0,0,0,0.2);
+}
+/* #customers-testimonials{
+	padding: 50px 0px;
+} */
+/* #testimonial img{
+	max-width: 120px;
+	margin: 0 auto 0 auto;  /*Align images in middle
+} */
+.faq-container{
+	height: 80%;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
+ }
+ .question{
+	height: 60%;
+	margin-top: 20px;
+	color: white;
+	background-color: #705C53;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 400;
+	padding-left: 5px;
+	cursor: pointer;
+ }
+ .question i{
+	margin-right: 10px;
+ }
+ .question.active{
+	background-color: #34c6d3;
+ }
+ .answer p{
+	background-color: #705C53;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding-left: 5px;
+	text-align: start;
+ }
+ #Disclaimer{
+	margin-top: 40px;
+ }
+ #Disclaimer p{
+	color: rgb(59, 169, 135, 1);
+ }
+#testimonial blockquote{
+	border:0;
+	font-family: Georgia, sans-serif;
+	font-style: italic;
+	color: #fff;
+	padding: 7px 150px;
+}
+#testimonial blockquote p{
+	color: #fff;
+}
+/* .testimonial-author p{
+	color: #fff;
+	font-size: 17px;
+}
+.testimonial-author p strong{
+	display: block;
+} */
+
+
+/* ===================================
+		CONTACT
+====================================== */
+footer{
+	background-color: #41464b;
+	margin-top: 0.55px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 5px solid rgba(0,0,0,0.2);
+}
+#contact-left h3, #contact-right h3{
+	color: #fff;
+	font-size: 27px;
+	font-weight: 700;
+}
+#contact-left p{
+	color: #fff;
+	margin-bottom: 30px;
+}
+#contact-info {
+	background-image: url("../img/world-map.png");
+	background-repeat: no-repeat;
+	background-size: contain; /*Image contain in full height and width*/
+}
+#contact-info address{
+	color: #fff;
+}
+#contact-info address b, 
+#phone-fax-email b strong{
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+form textarea{
+	resize: none;
+}
+form .form-control{
+	background: transparent;
+	border-radius: 0;
+	border-color: #fff;
+	font-size: 17px;
+	font-weight: 300;
+	padding: 8px 16px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+/* ===================================
+		FORM ERROR MESSAGE
+====================================== */
+#contact-right #error_msg{
+	margin-bottom: 20px;
+	padding: 0px;
+	background: #fe8b8e;
+	text-align: center;
+	font-size: 17px;
+	transition: all 0.5s ease;
+}
